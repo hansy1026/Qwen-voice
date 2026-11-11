@@ -6,6 +6,12 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
+# Avoid embedding a developer's absolute source path in release binaries.
+if (ANDROID)
+    get_filename_component(_qwen3_source_root "${CMAKE_CURRENT_LIST_DIR}/../../../.." REALPATH)
+    add_compile_options("-ffile-prefix-map=${_qwen3_source_root}=.")
+endif()
+
 set(QWEN3_TTS_ROOT "${CMAKE_CURRENT_LIST_DIR}/../../../../external/qwen3-tts.cpp")
 set(GGML_DIR "${QWEN3_TTS_ROOT}/ggml")
 

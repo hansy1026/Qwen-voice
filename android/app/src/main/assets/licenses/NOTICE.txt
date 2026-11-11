@@ -1,0 +1,9 @@
+Qwen-voice third-party notices
+
+Qwen-voice original code: MIT; see Qwen-voice-MIT.txt.
+Android app based on Danmoreng/qwen3-tts-android: MIT; see Android-upstream-MIT.txt.
+Native engine Danmoreng/qwen3-tts.cpp: MIT; see qwen3-tts.cpp-MIT.txt.
+GGML: MIT; see ggml-MIT.txt.
+Qwen3-TTS model weights and the bundled GGUF conversion are licensed under Apache License 2.0; see Apache-2.0.txt.
+Model sources: https://huggingface.co/Qwen and https://huggingface.co/Serveurperso/Qwen3-TTS-GGUF
+Other dependencies retain their own licenses.
