@@ -1,0 +1,30 @@
+# User data and local runtimes
+/data/
+/outputs/
+/work/
+*.wav
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.apk
+*.aab
+*.keystore
+*.jks
+*.p12
+*.pem
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.venv/
+
+# Android build artifacts
+/android/.gradle/
+/android/.idea/
+/android/.kotlin/
+/android/build/
+/android/app/build/
+/android/app/.cxx/
+/android/local.properties
+/android/app/src/main/assets/models/
